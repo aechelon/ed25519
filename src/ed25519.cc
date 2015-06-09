@@ -83,6 +83,7 @@ NAN_METHOD(Sign) {
 	for (int i = 0; i < 64; i++) {
 		signatureData[i] = signatureMessageData[i];
 	}
+        free(signatureMessageData);
 	NanReturnValue(signature);
 }
 

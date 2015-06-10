@@ -4,6 +4,8 @@ A native implementation of Ed25519(http://ed25519.cr.yp.to/) for node.js
 ## Installation
 npm install https://github.com/dazoe/ed25519/tarball/master
 
+On Windows install the OpenSSL binary distribution to its default install location (c:\OpenSSL-Win32 for 32-bit and OpenSSL-Win64 for 64-bit) from https://www.openssl.org/related/binaries.html
+
 ## Usage
 For usage details see the example.js file.
 

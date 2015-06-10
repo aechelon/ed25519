@@ -79,6 +79,7 @@
             ],
             'include_dirs': [
               '<(openssl_root)/include',
+              'node_modules/nan',
             ],
           },
 
@@ -113,7 +114,8 @@
 	    ],
             'include_dirs': [
               "<(nodedir)/deps/openssl/openssl/include",
-              "<(openssl_config_path)"
+              "<(openssl_config_path)",
+              "<!(node -e \"require('nan')\")"
             ]
 	  }
         ]
